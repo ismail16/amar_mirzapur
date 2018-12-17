@@ -1,0 +1,1 @@
+var base = 'http://localhost/amar_mirzapur';

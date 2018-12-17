@@ -1,0 +1,9 @@
+RewriteEngine on
+
+RewriteCond %{REQUEST_URI} !((.+\..+)|(^/[a-z0-9_-]+/$)|(^/[a-z0-9_-]+$)) [NC]
+RewriteRule (.*)$ index.php [QSA,L]
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php [L]
